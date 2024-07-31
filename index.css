@@ -130,3 +130,13 @@ input:checked + .slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+
+#generate-btn:hover{
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.password:hover{
+    border: 1px solid #4ADF86;
+    cursor: pointer;
+}
