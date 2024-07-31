@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    background-color: #1F2937;
+    color: white;
+    padding: 100px 52px 52px;
+}
+
+.top-section {
+    padding-bottom: 35px;
+}
+
+h1, h2 {
+    font-family: "Karla", sans-serif;
+    margin: 0;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+h2 {
+    color: #4ADF86;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.pass-length-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#password-length {
+    width: 50px;
+    text-align: center;
+}
+
+.options-container {
+    font-family: "Inter", sans-serif;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    box-sizing: border-box;
+    margin-bottom: 35px;
+}
+
+#generate-btn {
+    font-family: "Inter", sans-serif;
+    background-color: #10B981;
+    border: none;
+    border-radius: 5px;
+    padding: 9px 15px;
+    color: inherit;
+}
+
+hr {
+    color: #2F3E53;
+    width: 446px;
+    margin: 0;
+}
+
+.password-container {
+    display: flex;
+    gap: 30px;
+    padding-top: 35px;
+}
+
+.password {
+    background-color: #273549;
+    color: #55F991;
+    width: 211px;
+    height: 39px;
+    border: none;
+    border-radius: 5px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: .4s;
+    background-color: #4B5563;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #10B981;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}

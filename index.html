@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="top-section">
+            <h1>Generate a</h1>
+            <h2>random password</h2>
+            <h3>Never use an insecure password again</h3>
+            <div class="options-container">
+                <div class="pass-length-container">
+                    <label for="password-length">Password Length:</label>
+                    <input type="number" id="password-length" min="1" max="15" value="1">
+                </div>    
+                <div class="switch">
+                    <label for="toggle-switch">Include Symbols:</label>
+                    <label class="switch"> 
+                        <input type="checkbox" id="toggle-symbols">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="switch">
+                    <label for="toggle-switch">Include Numbers:</label>
+                    <label class="switch"> 
+                        <input type="checkbox" id="toggle-numbers">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+            <button id="generate-btn">Generate passwords</button>
+        </div>
+        <hr>
+        <div class="password-container">
+            <button class="password" id="password-one"></button>
+            <button class="password" id="password-two"></button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
